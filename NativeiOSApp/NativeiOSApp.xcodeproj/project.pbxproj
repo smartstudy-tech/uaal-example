@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		497D53AE265548FF008A7702 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 497D53AC265548FF008A7702 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D15FC472264A1600006315A /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D15FC462264A1600006315A /* MainViewController.mm */; };
 		9D15FC4A2264A1600006315A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D15FC482264A1600006315A /* Main.storyboard */; };
 		9D15FC4C2264A1600006315A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D15FC4B2264A1600006315A /* Assets.xcassets */; };
@@ -15,8 +16,23 @@
 		B7EFDF7AFBAF16AA9287FF3F /* Pods_NativeiOSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B79255F9488BD2CFD1640FC /* Pods_NativeiOSApp.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		497D53AF265548FF008A7702 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				497D53AE265548FF008A7702 /* UnityFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2B79255F9488BD2CFD1640FC /* Pods_NativeiOSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NativeiOSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		497D53AC265548FF008A7702 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6255070D8B5A491699B0B9A1 /* Pods-NativeiOSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeiOSApp.debug.xcconfig"; path = "Target Support Files/Pods-NativeiOSApp/Pods-NativeiOSApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9D15FC3F2264A1600006315A /* NativeiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D15FC462264A1600006315A /* MainViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
@@ -74,6 +90,7 @@
 		9D78DAFB2265A7FC00274039 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				497D53AC265548FF008A7702 /* UnityFramework.framework */,
 				9D78DAFC2265A7FC00274039 /* UIKit.framework */,
 				2B79255F9488BD2CFD1640FC /* Pods_NativeiOSApp.framework */,
 			);
@@ -86,7 +103,6 @@
 				6255070D8B5A491699B0B9A1 /* Pods-NativeiOSApp.debug.xcconfig */,
 				C99E34BF6FC1414BA3A7664D /* Pods-NativeiOSApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -102,6 +118,7 @@
 				9D15FC3C2264A15F0006315A /* Frameworks */,
 				9D15FC3D2264A15F0006315A /* Resources */,
 				4B091E8C054801705FA1B1B3 /* [CP] Embed Pods Frameworks */,
+				497D53AF265548FF008A7702 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -348,7 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZE6P334QKR;
+				DEVELOPMENT_TEAM = JDC4ZN53DB;
 				INFOPLIST_FILE = NativeiOSApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -366,8 +383,9 @@
 			baseConfigurationReference = C99E34BF6FC1414BA3A7664D /* Pods-NativeiOSApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZE6P334QKR;
+				DEVELOPMENT_TEAM = JDC4ZN53DB;
 				INFOPLIST_FILE = NativeiOSApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -376,6 +394,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unity.nativeiOSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
