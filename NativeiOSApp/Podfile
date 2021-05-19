@@ -7,4 +7,6 @@ target 'NativeiOSApp' do
 
   # Pods for NativeiOSApp
 
+pod 'AFNetworking', '~> 4.0'
+
 end
