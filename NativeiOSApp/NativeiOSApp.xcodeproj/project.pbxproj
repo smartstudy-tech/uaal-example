@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		497D53AE265548FF008A7702 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 497D53AC265548FF008A7702 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		497D540126554C08008A7702 /* Utills.m in Sources */ = {isa = PBXBuildFile; fileRef = 497D540026554C07008A7702 /* Utills.m */; };
 		9D15FC472264A1600006315A /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D15FC462264A1600006315A /* MainViewController.mm */; };
 		9D15FC4A2264A1600006315A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D15FC482264A1600006315A /* Main.storyboard */; };
 		9D15FC4C2264A1600006315A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D15FC4B2264A1600006315A /* Assets.xcassets */; };
@@ -33,6 +34,8 @@
 /* Begin PBXFileReference section */
 		2B79255F9488BD2CFD1640FC /* Pods_NativeiOSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NativeiOSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		497D53AC265548FF008A7702 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		497D53FF26554C07008A7702 /* Utills.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utills.h; sourceTree = "<group>"; };
+		497D540026554C07008A7702 /* Utills.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utills.m; sourceTree = "<group>"; };
 		6255070D8B5A491699B0B9A1 /* Pods-NativeiOSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeiOSApp.debug.xcconfig"; path = "Target Support Files/Pods-NativeiOSApp/Pods-NativeiOSApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9D15FC3F2264A1600006315A /* NativeiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D15FC462264A1600006315A /* MainViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 				9D15FC4B2264A1600006315A /* Assets.xcassets */,
 				9D15FC4D2264A1600006315A /* LaunchScreen.storyboard */,
 				9D15FC502264A1600006315A /* Info.plist */,
+				497D53FF26554C07008A7702 /* Utills.h */,
+				497D540026554C07008A7702 /* Utills.m */,
 			);
 			path = NativeiOSApp;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497D540126554C08008A7702 /* Utills.m in Sources */,
 				9D15FC472264A1600006315A /* MainViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,7 +378,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.unity.nativeiOSApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unity.nativeiOSApptest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -392,7 +398,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.unity.nativeiOSApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unity.nativeiOSApptest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
