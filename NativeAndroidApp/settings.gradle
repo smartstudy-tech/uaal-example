@@ -1,5 +1,6 @@
 include ':app'
 
+//Uaal Project Settings by Groot 01
 include ':unityLibrary'
 project(':unityLibrary').projectDir=new File('..\\UnityProject\\androidBuild\\unityLibrary')
 
